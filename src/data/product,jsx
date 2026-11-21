@@ -1,0 +1,74 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Easy Bake Loose Powder',
+    price: 40,
+    image: 'https://i.pinimg.com/1200x/d5/5a/b8/d55ab8a146f2a156ece541e615fe5ced.jpg'
+  },
+  {
+    id: 2,
+    name: 'Blush Filter Liquid Blush',
+    price: 25,
+    image: 'https://i.pinimg.com/1200x/23/89/e1/2389e191b31ba3fd9e722b682365c7f1.jpg'
+  },
+  {
+    id: 3,
+    name: 'Faux Filler Jelly Oil',
+    price: 21,
+    image: 'https://i.pinimg.com/736x/59/b2/33/59b233fce25ca1745cc6ac6a1db69178.jpg'
+  },
+  {
+    id: 4,
+    name: 'Easy Blur Foundation',
+    price: 37,
+    image: 'https://i.pinimg.com/736x/ae/e1/a2/aee1a22aa5cdd114c1513c9ac30e581b.jpg'
+  },
+  {
+    id: 5,
+    name: 'FauxFilter Concealer',
+    price: 31,
+    image: 'https://i.pinimg.com/1200x/91/e7/3f/91e73fb2587907be253c12e0afaff102.jpg'
+  },
+  {
+    id: 6,
+    name: 'Easy Bake Setting Spray',
+    price: 31,
+    image: 'https://i.pinimg.com/1200x/e4/7e/01/e47e01a5022bc5ef88433425cb452333.jpg'
+  },
+  {
+    id: 7,
+    name: 'Lip Contour Stain',
+    price: 25,
+    image: 'https://i.pinimg.com/1200x/23/3f/65/233f6501bd5844a77e8e86ebf6f40370.jpg'
+  },
+  {
+    id: 8,
+    name: '1 Coat WOW Mascara',
+    price: 23,
+    image: 'https://i.pinimg.com/736x/8d/08/2b/8d082b15417742eca52c6062d5b6d81e.jpg'
+  },
+  {
+    id: 9,
+    name: 'Easy Bake Pressed Powder',
+    price: 40,
+    image: 'https://i.pinimg.com/736x/64/d5/bb/64d5bb903121fe0aae3bf1df1695e13f.jpg'
+  },
+  {
+    id: 10,
+    name: 'Easy Blur Primer',
+    price: 29,
+    image: 'https://i.pinimg.com/736x/b9/c5/09/b9c5096a7aa34a6e854fc98e83406a55.jpg'
+  },
+  {
+    id: 11,
+    name: 'Lip Contour 2.0',
+    price: 23,
+    image: 'https://i.pinimg.com/1200x/85/7d/db/857ddb289f46bd9a82c8e79bab7e843c.jpg'
+  },
+  {
+    id: 12,
+    name: 'FauxFilter Concealer',
+    price: 33,
+    image: 'https://i.pinimg.com/1200x/91/e7/3f/91e73fb2587907be253c12e0afaff102.jpg'
+  }
+];

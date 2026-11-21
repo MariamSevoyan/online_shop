@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box; 
+}
+html { scroll-behavior: smooth;
+ }
+body { 
+  font-family: Arial, sans-serif;
+   background-color: #F5E7E7;
+    color: #49383A;
+   }
+.app {
+   width: 100%;
+    min-height: 100vh;
+     padding: 25px 55px; 
+    }
+/* NAVBAR */
+.navbar {
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+   border-bottom: 1px solid #E4CED1;
+   }
+.navbar h1 {
+ font-size: 34px;
+ letter-spacing: 6px; 
+ color: #9B6873; 
+}
+.navbar nav {
+   display: flex;
+   gap: 35px;
+   }
+.navbar a {
+   text-decoration: none;
+  color: #49383A; 
+  font-size: 15px;
+ transition: 0.3s;
+ }
+.navbar a:hover { 
+  color: #B77C8A; 
+}
+/* HERO SECTION */
+.hero {
+  min-height: 570px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px; 
+}
+.hero > p:first-child { 
+  letter-spacing: 5px; 
+  font-size: 13px; 
+  color: #80525D; 
+}
+.hero h2 {
+   font-size: 58px;
+    max-width: 800px; line-height: 1.2; 
+    color: #9B6873;
+     font-weight: 500;
+     }
+.hero p {
+   font-size: 16px;
+ }
+.hero button {
+   background-color: #9B6873;
+   color: white;
+   border: none;
+   padding: 16px 45px; 
+   font-size: 14px;
+   letter-spacing: 1px;
+   cursor: pointer; 
+   margin-top: 15px; 
+   transition: 0.3s; 
+  }
+.hero button:hover {
+  background-color: #80525D; 
+}
+/* PRODUCTS SECTION */
+.products { 
+  text-align: center;
+  padding: 65px 0;
+ }
+.subtitle {
+   letter-spacing: 5px; 
+   font-size: 12px;
+   color: #80525D; 
+  }
+.products h2 {
+   font-size: 42px;
+   color: #9B6873;
+   margin: 18px 0 45px;
+   font-weight: 500;
+   }
+/* PRODUCT GRID */
+.product-list {
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   column-gap: 22px;
+   row-gap: 35px;
+   width: 100%; 
+  }
+/* PRODUCT CARD */
+.product-card {
+   width: 100%; 
+   background-color: #FFF9F8; 
+   padding: 15px;
+   text-align: center;
+   transition: 0.3s;
+   }
+.product-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(120, 75, 85, 0.12);
+   }
+/* PRODUCT IMAGE */
+.product-card img {
+   width: 100%;
+   height: 240px;
+   object-fit: contain;
+   background-color: white;
+  }
+/* BRAND */
+.brand {
+   font-size: 11px;
+   letter-spacing: 3px; 
+   margin-top: 18px;
+   color: #9B6873;
+   }
+/* PRODUCT NAME */
+.product-card h3 {
+   margin: 12px 0;
+   font-size: 16px;
+   font-weight: 500;
+   }
+/* PRICE */
+.price {
+   color: #9B6873;
+   font-size: 17px;
+   margin: 10px 0;
+   }
+/* ADD TO CART */
+.product-card button {
+   width: 100%;
+   background-color: #9B6873;
+   color: white; 
+   border: none;
+   padding: 13px;
+   font-size: 13px;
+   cursor: pointer;
+   margin-top: 12px;
+   transition: 0.3s;
+   }
+.product-card button:hover { 
+  background-color: #80525D;
+ }
+/* FOOTER */
+.footer {
+   text-align: center;
+   padding: 50px 0 20px;
+   margin-top: 60px;
+   border-top: 1px solid #D8BFC2; 
+  }
+.footer h2 {
+   letter-spacing: 6px;
+   color: #9B6873; 
+   margin-bottom: 15px;
+   }
+.footer p {
+   margin: 10px 0;
+   font-size: 13px;
+   }
+/* RESPONSIVE */
+@media (max-width: 1000px) { 
+  .product-list { 
+    grid-template-columns: repeat(3, 1fr);
+   }
+ }
+@media (max-width: 750px) {
+   .app {
+     padding: 20px;
+     }
+.navbar { 
+  flex-direction: column;
+   gap: 20px; 
+  }
+.navbar nav {
+   gap: 15px;
+   }
+.hero h2 {
+   font-size: 38px; 
+  }
+.product-list { 
+  grid-template-columns: repeat(2, 1fr);
+ } 
+}
+@media (max-width: 480px) { 
+  .product-list { 
+    grid-template-columns: 1fr;
+   }
+.product-card img {
+   height: 220px;
+   }
+ }
+ /* LOADING */
+
+.loading {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #9B6873;
+}
+
+.loading h2 {
+  font-size: 35px;
+  letter-spacing: 7px;
+}
+
+.loading p {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #E4CED1;
+  border-top: 4px solid #9B6873;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
